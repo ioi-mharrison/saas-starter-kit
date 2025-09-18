@@ -23,14 +23,22 @@ const Home: NextPageWithLayout = () => {
       </Head>
 
       <div className="container mx-auto">
-        <div className="navbar bg-base-100 px-0 sm:px-1">
+        <div className="navbar bg-base-100/95 backdrop-blur-sm sticky top-0 z-50 px-0 sm:px-1 border-b border-gray-100">
           <div className="flex-1">
-            <Link href="/" className="btn btn-ghost text-xl normal-case">
-              BoxyHQ
+            <Link href="/" className="btn btn-ghost text-xl normal-case font-bold">
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                Pulse
+              </span>
             </Link>
           </div>
           <div className="flex-none">
             <ul className="menu menu-horizontal flex items-center gap-2 sm:gap-4">
+              <li className="hidden md:block">
+                <a href="#features" className="btn btn-ghost">Features</a>
+              </li>
+              <li className="hidden md:block">
+                <a href="#pricing" className="btn btn-ghost">Pricing</a>
+              </li>
               {env.darkModeEnabled && (
                 <li>
                   <button
@@ -43,29 +51,28 @@ const Home: NextPageWithLayout = () => {
               )}
               <li>
                 <Link
-                  href="/auth/join"
-                  className="btn btn-primary btn-md py-3 px-2 sm:px-4 text-white"
+                  href="/auth/login"
+                  className="btn btn-outline btn-md py-3 px-2 sm:px-4 hover:bg-primary hover:text-white transition-all rounded-full"
                 >
-                  {t('sign-up')}
+                  Login
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/auth/login"
-                  className="btn btn-primary dark:border-zinc-600 dark:border-2 dark:text-zinc-200 btn-outline py-3 px-2 sm:px-4 btn-md"
+                  href="/auth/join"
+                  className="btn btn-primary btn-md py-3 px-2 sm:px-4 text-white shadow-lg hover:shadow-xl transition-all rounded-full"
                 >
-                  {t('sign-in')}
+                  Get Started
                 </Link>
               </li>
             </ul>
           </div>
         </div>
         <HeroSection />
-        <div className="divider"></div>
         <FeatureSection />
-        <div className="divider"></div>
-        <PricingSection />
-        <div className="divider"></div>
+        <div id="pricing">
+          <PricingSection />
+        </div>
         <FAQSection />
       </div>
     </>

@@ -67,6 +67,7 @@ model User {
   accounts    Account[]
   sessions    Session[]
   invitations Invitation[]
+  createdSurveys Survey[]
 }
 
 model Team {
@@ -82,6 +83,7 @@ model Team {
   members         TeamMember[]
   invitations     Invitation[]
   apiKeys         ApiKey[]
+  surveys         Survey[]
 
   @@index([billingId])
 }
@@ -217,4 +219,21 @@ model jackson_ttl {
 
   @@index([expiresAt], map: "_jackson_ttl_expires_at")
   @@ignore
+}
+
+model Survey {
+  id          String   @id @default(uuid())
+  title       String
+  description String?
+  teamId      String   // org_id for tenant isolation (maps to Team for RLS)
+  status      String   @default("draft") // draft, published, archived
+  createdBy   String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @default(now())
+
+  team Team @relation(fields: [teamId], references: [id], onDelete: Cascade)
+  creator User @relation(fields: [createdBy], references: [id])
+
+  @@index([teamId])
+  @@index([createdBy])
 }

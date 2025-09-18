@@ -1,46 +1,50 @@
 [
   {
-    "name": "Create account",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    "name": "Advanced Survey Builder",
+    "description": "Create sophisticated assessment surveys with 25+ question types, conditional logic, and branching scenarios to gather precise insights."
   },
   {
-    "name": "Sign in with Email and Password",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    "name": "Real-time Analytics Dashboard",
+    "description": "Monitor engagement metrics, response rates, and key performance indicators with live dashboards powered by BigQuery and D3.js visualizations."
   },
   {
-    "name": "Sign in with Magic link",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    "name": "Multi-tenant Security",
+    "description": "Enterprise-grade security with row-level access control, complete tenant isolation, and comprehensive audit logging for data governance."
   },
   {
-    "name": "Sign in with SAML SSO",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    "name": "Psychometric Assessment Engine",
+    "description": "Built-in support for PERSI, EMOCI, ORGCI personality and emotional intelligence assessments with advanced scoring algorithms."
   },
   {
-    "name": "Directory Sync (SCIM)",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    "name": "Change Data Capture (CDC)",
+    "description": "Real-time data streaming from PostgreSQL to BigQuery using Google Datastream for instant analytics and reporting capabilities."
   },
   {
-    "name": "Update account",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    "name": "Voice-Enabled Interviews",
+    "description": "AI-powered voice agent integration for conducting automated interviews and qualitative assessments at scale."
   },
   {
-    "name": "Invite users to the team",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    "name": "Team Management & RBAC",
+    "description": "Comprehensive role-based access control with team hierarchies, permission management, and organizational structure support."
   },
   {
-    "name": "Manage team members",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    "name": "RAG-Powered Insights",
+    "description": "Retrieval-Augmented Generation for intelligent report generation, trend analysis, and actionable recommendations from survey data."
   },
   {
-    "name": "Update team settings",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    "name": "Enterprise Integrations",
+    "description": "Seamless integration with SAML SSO, directory sync (SCIM), and popular HR platforms for streamlined user management."
   },
   {
-    "name": "Webhooks & Events",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    "name": "Automated Reporting",
+    "description": "Scheduled reports, custom dashboards, and automated insights delivery via email, Slack, or API webhooks."
   },
   {
-    "name": "Create team",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    "name": "Data Export & API",
+    "description": "Comprehensive REST API and data export capabilities for integration with existing business intelligence and analytics tools."
+  },
+  {
+    "name": "Cloud-Native Architecture",
+    "description": "Built on Google Cloud Platform with auto-scaling, high availability, and enterprise-grade infrastructure for mission-critical assessments."
   }
 ]
